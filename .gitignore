@@ -1,0 +1,18 @@
+# build output
+bin/
+obj/
+# secrets / local config
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+*.pfx
+*.key
+# generated run data (keep sample inputs)
+runs/*
+!runs/_sample-inputs/
+!runs/.gitkeep
+# misc
+.vs/
+*.user
+__pycache__/
