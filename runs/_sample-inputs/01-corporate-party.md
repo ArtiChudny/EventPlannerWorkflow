@@ -1,0 +1,1 @@
+Plan a corporate year-end party for 80 people in Berlin on December 12, 2026. Budget 12,000 EUR. Evening event, 5 hours, mix of vegetarian/vegan/gluten-free guests, wheelchair-accessible venue required, we want live music and a short award ceremony.
