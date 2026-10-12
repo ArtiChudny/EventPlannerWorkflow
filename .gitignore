@@ -8,10 +8,6 @@ obj/
 .claude/settings.local.json
 *.pfx
 *.key
-# generated run data (keep sample inputs)
-runs/*
-!runs/_sample-inputs/
-!runs/.gitkeep
 # misc
 .vs/
 *.user
