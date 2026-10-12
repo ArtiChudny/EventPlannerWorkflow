@@ -1,0 +1,199 @@
+{
+  "run_id": "20261012-2248-corporate-party-berlin",
+  "created": "2026-10-12T22:48:31+04:00",
+  "updated": "2026-10-12T23:20:50+04:00",
+  "status": "html_built",
+  "current_stage": "done",
+  "revision_count": 1,
+  "requirements_confirmed": true,
+  "agents": {
+    "requirements-formalizer": {
+      "status": "completed",
+      "artifact": "artifacts/requirements.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "venue-planner": {
+      "status": "completed",
+      "artifact": "artifacts/venue.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "weather-outlook": {
+      "status": "completed",
+      "artifact": "artifacts/weather.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "catering-planner": {
+      "status": "completed",
+      "artifact": "artifacts/catering.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "program-planner": {
+      "status": "completed",
+      "artifact": "artifacts/program.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "decor-av-planner": {
+      "status": "completed",
+      "artifact": "artifacts/decor-av.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "logistics-planner": {
+      "status": "completed",
+      "artifact": "artifacts/logistics.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "budget-aggregator": {
+      "status": "completed",
+      "artifact": "artifacts/budget.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "validator": {
+      "status": "completed",
+      "artifact": "artifacts/validation-report.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "event-plan-builder": {
+      "status": "completed",
+      "artifact": "event-plan.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "html-builder": {
+      "status": "completed",
+      "artifact": "event-guide.html",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    }
+  },
+  "artifacts": {},
+  "dependencies": {
+    "requirements-formalizer": [],
+    "venue-planner": [
+      "requirements-formalizer"
+    ],
+    "weather-outlook": [
+      "requirements-formalizer"
+    ],
+    "catering-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "program-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "decor-av-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "logistics-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner"
+    ],
+    "budget-aggregator": [
+      "requirements-formalizer",
+      "venue-planner",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner"
+    ],
+    "validator": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner",
+      "budget-aggregator"
+    ],
+    "event-plan-builder": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner",
+      "budget-aggregator",
+      "validator"
+    ],
+    "html-builder": [
+      "event-plan-builder"
+    ]
+  },
+  "gate_retries": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 0,
+    "G7": 0,
+    "G8": 1,
+    "G9": 0
+  },
+  "approval": {
+    "status": "approved",
+    "plan_sha256": "dd54fec8406c027e82ea0a9a5c109fae6a241dfeeb1e4911128a05b3594d4349",
+    "timestamp": "2026-10-12T23:20:50+04:00"
+  },
+  "decisions": [
+    {
+      "agent": "venue-planner",
+      "mode": "full",
+      "reason": "No fixed venue supplied"
+    },
+    {
+      "agent": "weather-outlook",
+      "mode": "brief",
+      "reason": "Fully indoor event"
+    },
+    {
+      "agent": "decor-av-planner",
+      "mode": "full",
+      "reason": "User wants decor and AV"
+    },
+    {
+      "agent": "all others",
+      "mode": "full",
+      "reason": "Default"
+    },
+    {
+      "agent": "coordinator",
+      "reason": "G8 failed again with gate_retries.G8 already at 3 (G3 also failing); retry limit exhausted, event-plan-builder not run"
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User relaxed accessibility requirement (step-free entrance + accessible toilets) and approved resetting gate_retries; new cycle"
+    }
+  ]
+}
