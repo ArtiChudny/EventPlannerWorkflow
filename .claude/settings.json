@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Edit(runs/**)",
+      "Bash(dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll new-run:*)",
+      "Bash(dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll check-artifact:*)",
+      "Bash(date:*)",
+      "Bash(sha256sum:*)",
+      "mcp__open-meteo"
+    ],
+    "deny": [
+      "Edit(runs/**/approval.json)",
+      "Bash(dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll approve:*)",
+      "Bash(dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll reject:*)",
+      "Bash(scripts/approve.cmd:*)",
+      "Bash(scripts/reject.cmd:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll approval-gate-guard"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll no-leak-guard"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dotnet tools/EventTools/bin/Release/net10.0/EventTools.dll post-write-state"
+          }
+        ]
+      }
+    ]
+  }
+}
