@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<style>
+  :root {
+    --bg: #f7f5f2; --card: #ffffff; --ink: #1f2430; --muted: #5d6575;
+    --accent: #7b3f98; --accent-soft: #efe6f5; --line: #e2dde8; --ok: #1d7a4c; --warn: #b45309;
+    --radius: 14px; --shadow: 0 1px 3px rgba(31,36,48,.08), 0 6px 18px rgba(31,36,48,.06);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  header.hero { background: linear-gradient(135deg, #4a2370, var(--accent)); color: #fff; padding: 48px 20px 40px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header.hero h1 { margin: 0 0 6px; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.15; }
+  header.hero p { margin: 0; opacity: .92; font-size: 1.05rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 24px; }
+  .fact { background: rgba(255,255,255,.14); border-radius: 10px; padding: 10px 14px; }
+  .fact b { display: block; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+  nav.toc { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+  nav.toc ul { list-style: none; margin: 0; padding: 10px 20px; display: flex; gap: 6px 16px; flex-wrap: wrap; max-width: 960px; margin-inline: auto; }
+  nav.toc a { text-decoration: none; font-size: .9rem; color: var(--muted); }
+  nav.toc a:hover { color: var(--accent); }
+  main { padding: 28px 0 56px; }
+  section { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 26px; margin: 0 0 22px; }
+  section h2 { margin: 0 0 12px; font-size: 1.35rem; color: var(--accent); border-bottom: 2px solid var(--accent-soft); padding-bottom: 8px; }
+  section h3 { margin: 18px 0 6px; font-size: 1.05rem; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--accent-soft); font-weight: 600; white-space: nowrap; }
+  ul, ol { padding-left: 1.3rem; }
+  .note { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 8px; margin: 12px 0; }
+  .risk-low { color: var(--ok); font-weight: 600; } .risk-medium, .risk-high { color: var(--warn); font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 20px 40px; }
+  @media (max-width: 600px) { section { padding: 18px 16px; } .wrap { padding: 0 12px; } }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    header.hero { background: #fff; color: #000; padding: 0 0 12px; border-bottom: 2px solid #000; }
+    .fact { background: #f2f2f2; } nav.toc { display: none; }
+    section { box-shadow: none; border: 1px solid #ccc; break-inside: avoid-page; }
+    a { color: #000; } a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>{{TITLE}}</h1>
+    <p>{{SUBTITLE}}</p>
+    <div class="facts">
+      <div class="fact"><b>Date</b>{{FACT_DATE}}</div>
+      <div class="fact"><b>Location</b>{{FACT_LOCATION}}</div>
+      <div class="fact"><b>Guests</b>{{FACT_GUESTS}}</div>
+      <div class="fact"><b>Budget</b>{{FACT_BUDGET}}</div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#venue">Venue</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#catering">Catering</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#decor-av">Decor &amp; AV</a></li>
+    <li><a href="#logistics">Logistics</a></li>
+    <li><a href="#budget">Budget</a></li>
+    <li><a href="#risks">Risks</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <section id="overview"><h2>Overview</h2>{{SECTION_OVERVIEW}}</section>
+  <section id="requirements"><h2>Confirmed Requirements</h2>{{SECTION_REQUIREMENTS}}</section>
+  <section id="venue"><h2>Venue</h2>{{SECTION_VENUE}}</section>
+  <section id="weather"><h2>Weather &amp; Contingency</h2>{{SECTION_WEATHER}}</section>
+  <section id="timeline"><h2>Timeline / Run-of-Show</h2>{{SECTION_TIMELINE}}</section>
+  <section id="catering"><h2>Catering</h2>{{SECTION_CATERING}}</section>
+  <section id="program"><h2>Entertainment &amp; Program</h2>{{SECTION_PROGRAM}}</section>
+  <section id="decor-av"><h2>Decor &amp; AV</h2>{{SECTION_DECOR_AV}}</section>
+  <section id="logistics"><h2>Logistics &amp; Staffing</h2>{{SECTION_LOGISTICS}}</section>
+  <section id="budget"><h2>Budget</h2>{{SECTION_BUDGET}}</section>
+  <section id="risks"><h2>Risks</h2>{{SECTION_RISKS}}</section>
+  <section id="sources"><h2>Sources</h2>{{SECTION_SOURCES}}</section>
+</main>
+
+<footer>{{FOOTER}}</footer>
+</body>
+</html>

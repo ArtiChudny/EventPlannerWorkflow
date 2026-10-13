@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corporate Year-End Party - Berlin, 12 December 2026</title>
+<style>
+  :root {
+    --bg: #f7f5f2; --card: #ffffff; --ink: #1f2430; --muted: #5d6575;
+    --accent: #7b3f98; --accent-soft: #efe6f5; --line: #e2dde8; --ok: #1d7a4c; --warn: #b45309;
+    --radius: 14px; --shadow: 0 1px 3px rgba(31,36,48,.08), 0 6px 18px rgba(31,36,48,.06);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  header.hero { background: linear-gradient(135deg, #4a2370, var(--accent)); color: #fff; padding: 48px 20px 40px; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header.hero h1 { margin: 0 0 6px; font-size: clamp(1.8rem, 5vw, 2.8rem); line-height: 1.15; }
+  header.hero p { margin: 0; opacity: .92; font-size: 1.05rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 24px; }
+  .fact { background: rgba(255,255,255,.14); border-radius: 10px; padding: 10px 14px; }
+  .fact b { display: block; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+  nav.toc { background: var(--card); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+  nav.toc ul { list-style: none; margin: 0; padding: 10px 20px; display: flex; gap: 6px 16px; flex-wrap: wrap; max-width: 960px; margin-inline: auto; }
+  nav.toc a { text-decoration: none; font-size: .9rem; color: var(--muted); }
+  nav.toc a:hover { color: var(--accent); }
+  main { padding: 28px 0 56px; }
+  section { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 26px; margin: 0 0 22px; }
+  section h2 { margin: 0 0 12px; font-size: 1.35rem; color: var(--accent); border-bottom: 2px solid var(--accent-soft); padding-bottom: 8px; }
+  section h3 { margin: 18px 0 6px; font-size: 1.05rem; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; display: block; overflow-x: auto; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: var(--accent-soft); font-weight: 600; white-space: nowrap; }
+  ul, ol { padding-left: 1.3rem; }
+  .note { background: var(--accent-soft); border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 8px; margin: 12px 0; }
+  .risk-low { color: var(--ok); font-weight: 600; } .risk-medium, .risk-high { color: var(--warn); font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 20px 40px; }
+  @media (max-width: 600px) { section { padding: 18px 16px; } .wrap { padding: 0 12px; } }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    header.hero { background: #fff; color: #000; padding: 0 0 12px; border-bottom: 2px solid #000; }
+    .fact { background: #f2f2f2; } nav.toc { display: none; }
+    section { box-shadow: none; border: 1px solid #ccc; break-inside: avoid-page; }
+    a { color: #000; } a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; }
+  }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Corporate Year-End Party - Berlin, 12 December 2026</h1>
+    <p>An elegant but relaxed winter evening for 80 guests with a buffet dinner, a live band, a short award ceremony and a photo booth, all fully indoors in central Berlin.</p>
+    <div class="facts">
+      <div class="fact"><b>Date</b>Saturday 12 December 2026, 18:00-23:00</div>
+      <div class="fact"><b>Location</b>Central Berlin (Balcony am Fernsehturm, Alexanderplatz)</div>
+      <div class="fact"><b>Guests</b>80</div>
+      <div class="fact"><b>Budget</b>12,000 EUR</div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#venue">Venue</a></li>
+    <li><a href="#weather">Weather</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#catering">Catering</a></li>
+    <li><a href="#program">Program</a></li>
+    <li><a href="#decor-av">Decor &amp; AV</a></li>
+    <li><a href="#logistics">Logistics</a></li>
+    <li><a href="#budget">Budget</a></li>
+    <li><a href="#risks">Risks</a></li>
+    <li><a href="#sources">Sources</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+  <section id="overview"><h2>Overview</h2>
+<p>This is a corporate year-end party for 80 guests on Saturday 12 December 2026, from 18:00 to 23:00, in central Berlin. It is an elegant but relaxed winter evening with a buffet dinner, a live band, a short award ceremony (about 20 minutes, 5-8 awards) and a photo booth, all fully indoors. The recommended venue is Balcony am Fernsehturm (Alexanderstrasse 7, at Alexanderplatz), which has ample capacity, a stage with sound and lighting, a step-free entrance via four lifts, and allows outside catering. The planned budget is 10,445.00 EUR before contingency and 11,489.50 EUR with a 10% contingency, which is 510.50 EUR under the 12,000 EUR limit. The margin is thin because almost every figure is an estimate that real quotes could change.</p>
+<div class="note"><b>Open items to settle before booking:</b> the accessible toilets, the venue price, and what the venue includes (furniture, technician, projector).</div>
+  </section>
+
+  <section id="requirements"><h2>Confirmed Requirements</h2>
+<ul>
+<li>Event: corporate year-end party with live music and a short award ceremony.</li>
+<li>Date and time: Saturday 12 December 2026, 18:00-23:00 (5 hours).</li>
+<li>Location: central Berlin with good public transport.</li>
+<li>Guests: 80.</li>
+<li>Style: elegant but relaxed winter party, no strict dress code. Fully indoor.</li>
+<li>Budget: 12,000 EUR maximum, all-inclusive and including a 10% contingency, so planned costs must stay at or below 10,800 EUR before contingency.</li>
+<li>Food and drink: seated or buffet dinner plus snacks, with wine, beer and soft drinks. Vegetarian, vegan and gluten-free guests are all assumed present (no counts were given).</li>
+<li>Music: live band or jazz/acoustic duo. A DJ only if the budget allows.</li>
+<li>Program: award ceremony of about 20 minutes with 5-8 awards, plus basic decoration, sound and lights.</li>
+<li>Services: coat check and staff included in the budget.</li>
+<li>Accessibility: step-free entrance and accessible toilets are required. Step-free access to the stage is not required; a ramp or portable stage ramp is a nice-to-have, to be confirmed with the venue.</li>
+<li>Not included: guest travel or accommodation. Language of the program (English and/or German) is up to the company.</li>
+</ul>
+  </section>
+
+  <section id="venue"><h2>Venue</h2>
+<p><b>Recommended: Balcony am Fernsehturm</b> (Alexanderstrasse 7, Alexanderplatz). Source: <a href="https://venuu.com/de/de/venues/balcony-am-fernsehturm" target="_blank" rel="noopener">https://venuu.com/de/de/venues/balcony-am-fernsehturm</a></p>
+<ul>
+<li><b>Capacity:</b> 350 seated, 1,000 standing (about 600 m2 main area), well above 80 guests. Whether a smaller zoned layout for 80 is offered is unverified (estimate); request it.</li>
+<li><b>Price:</b> the venue listing shows day rental from 500 EUR (depends on event type). Another listing shows "from 4,480 EUR" on an unclear basis, and a third says price on request. The planning figure of 1,500 EUR for the evening including setup and teardown is unverified (estimate). A written quote must confirm no more than 1,500 EUR.</li>
+<li><b>What is included:</b> projector, 7 m LED screen, sound system, lighting, PA, DJ equipment, a stage with backstage and dressing rooms, a dance floor, lounge furniture and two bars are listed as available on site. No page says whether furniture, technician and projector are in the base price, so this is unverified (estimate). Treat furniture, projector and screen as "available, inclusion to be confirmed" and the technician as an extra cost until confirmed.</li>
+<li><b>Accessibility:</b>
+  <ul>
+  <li>Step-free entrance and lifts: supported by four listing pages (four lifts; one page states "Step-free access: Yes" and "Lift: Yes"). The venue listing carries a wheelchair-friendly feature tag. The sources do not support a claim that the whole venue is wheelchair accessible.</li>
+  <li>Accessible toilets: unverified (estimate). No page confirms them. This is an open requirement that must be confirmed in writing before booking. Question for the booking enquiry: "Is there at least one wheelchair-accessible toilet (step-free, adequate door width and turning space, grab rails) on the same floor as the event space or reachable by the lifts? Please confirm in writing and state its location."</li>
+  <li>Stage ramp (nice-to-have): stage height and ramp are unverified (estimate). Ask: "Can a portable ramp be provided for the stage, and at what cost?"</li>
+  </ul></li>
+<li><b>Parking and transport:</b> 10 parking spaces are listed. Public transport access is expected to be very good, but the venue pages do not state it (unverified (estimate)).</li>
+<li><b>Rules:</b> own food and alcohol are permitted; in-house catering, drinks and staff are optional. Any outside catering or corkage fee is not stated (unverified (estimate)). A cloakroom and reception area are listed. Curfew and noise limits are not stated (unverified (estimate)) and must be confirmed. The venue also has a 100 m2 terrace, which this indoor event does not use.</li>
+</ul>
+<h3>Options considered</h3>
+<table>
+<thead><tr><th>Criterion</th><th>Balcony am Fernsehturm</th><th>Mokka Mitte Bar</th><th>Allabout Cafe Mitte</th></tr></thead>
+<tbody>
+<tr><td>Capacity (seated)</td><td>350</td><td>100</td><td>80 (no spare room)</td></tr>
+<tr><td>Price on page</td><td>from 500 EUR per day; other listings differ</td><td>from 1,785 EUR per day</td><td>on request</td></tr>
+<tr><td>Step-free entrance / lift</td><td>Yes, four lifts (4 pages)</td><td>"Barrier-free"</td><td>"Disability Access" only</td></tr>
+<tr><td>Accessible toilets</td><td>Unverified (estimate), ask venue</td><td>Unverified (estimate)</td><td>Unverified (estimate)</td></tr>
+<tr><td>Stage (ramp = nice-to-have)</td><td>Stage present, ramp unverified</td><td>Stage 3 m x 1.2 m, ramp unverified</td><td>No stage listed</td></tr>
+<tr><td>Projector / screen</td><td>Available (inclusion unconfirmed)</td><td>Screens on site</td><td>Projector and screen listed</td></tr>
+<tr><td>Outside catering</td><td>Own food and alcohol allowed</td><td>Not stated</td><td>Not stated (in-house focus)</td></tr>
+<tr><td>Noise / curfew</td><td>Not stated</td><td>No strict noise limits</td><td>Open until 22:00, extendable</td></tr>
+</tbody>
+</table>
+<p>Mom's Limousine Service Berlin was excluded because its seated capacity (60) is below 80. No candidate verified accessible toilets, so switching venues would not improve the evidence.</p>
+<p><b>Fallback:</b> Mokka Mitte Bar, only if Balcony cannot confirm accessible toilets or a price near 1,500 EUR. Its base price is already 1,785 EUR and its accessible toilets are equally unverified, so it would also need written confirmation.</p>
+  </section>
+
+  <section id="weather"><h2>Weather &amp; Contingency</h2>
+<ul>
+<li>The event is 61 days away, beyond the roughly 16-day forecast range, so this is not a forecast. It is based on one year of historical data (10-14 December 2025) and is indicative only.</li>
+<li>On 12 December 2025: high 6.2 C, low 2.7 C, 0 mm rain, gusts 24.8 km/h. Across 10-14 December 2025: highs 6.2-11.5 C, lows 2.7-8.5 C, rain only on 10 December (0.7 mm), gusts 24.8-40.7 km/h. Mid-December evenings in Berlin are typically cold and sometimes near freezing (general expectation, unverified (estimate)).</li>
+<li><b>Outdoor risk level:</b> <span class="risk-low">low</span> (indoor event).</li>
+<li><b>Backup:</b> there are no outdoor segments, so no weather fallback is needed. Guest-travel advice only: warm coats and sturdy footwear, a note on public transport and the coat check, and extra transit time if there is frost or snow. Re-check the forecast from about 26 November 2026 and again 3 days before the event for ice or snow disruption.</li>
+</ul>
+  </section>
+
+  <section id="timeline"><h2>Timeline / Run-of-Show</h2>
+<p>Times are for guests. Setup, the band sound check (16:30-17:30, before doors) and teardown are outside this table and are covered under Logistics &amp; Staffing.</p>
+<table>
+<thead><tr><th>Start</th><th>End</th><th>Segment</th><th>Responsible</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>18:00</td><td>18:45</td><td>Arrival, coat check, welcome drinks</td><td>Venue and catering staff, host</td><td>Drinks served on arrival (wine, beer, soft drinks); background playlist, no live set yet</td></tr>
+<tr><td>18:45</td><td>19:00</td><td>Welcome speech</td><td>Company host</td><td>15 minutes, short welcome and thanks</td></tr>
+<tr><td>19:00</td><td>19:50</td><td>Dinner (buffet)</td><td>Caterer</td><td>50 minutes; mains served within this window; vegetarian, vegan and gluten-free options</td></tr>
+<tr><td>19:50</td><td>20:00</td><td>Transition to awards</td><td>Host, venue staff</td><td>Deliberate 10-minute buffer: guests settle, plates cleared, stage and microphones ready</td></tr>
+<tr><td>20:00</td><td>20:20</td><td>Award ceremony</td><td>Company host, presenters</td><td>20 minutes, 5-8 awards, stage with sound and lights; a ramp is a nice-to-have only</td></tr>
+<tr><td>20:20</td><td>20:30</td><td>Break and bar</td><td>Catering staff</td><td>Deliberate 10-minute break; band already sound-checked, only a quick stage changeover</td></tr>
+<tr><td>20:30</td><td>21:15</td><td>Live music, set 1</td><td>Live band</td><td>45 minutes</td></tr>
+<tr><td>21:15</td><td>21:30</td><td>Break, late snack and dessert</td><td>Caterer</td><td>Deliberate 15-minute break; late snack starts at 21:15; photo booth opens</td></tr>
+<tr><td>21:30</td><td>22:15</td><td>Live music, set 2</td><td>Live band</td><td>45 minutes, dance-friendly repertoire; late snack remains available</td></tr>
+<tr><td>22:15</td><td>22:45</td><td>Open networking, photo booth</td><td>Host, photo booth</td><td>Background playlist, bar stays open; any remaining late snack stays on self-service until 22:45</td></tr>
+<tr><td>22:45</td><td>23:00</td><td>Closing words and farewell</td><td>Company host</td><td>15 minutes: 5 minutes of thanks and practical information (coat check, night transport), then farewell and coat collection; guests leave by 23:00</td></tr>
+</tbody>
+</table>
+<p>The caterer's late snack window is 21:15-22:15 (self-service, so no staff action interrupts any program item); leftovers can stay out until 22:45. The venue curfew is not stated (unverified (estimate)) and must be confirmed.</p>
+  </section>
+
+  <section id="catering"><h2>Catering</h2>
+<p><b>Recommended:</b> a buffet via the heycater marketplace in the "Green Berlin Buffet" style (vegan-first, with vegetarian and gluten-free variants), with service staff and a drinks package. The exact caterer is assigned by quote. Fallback: Bella&amp;Bona (own kitchen, delivery, setup and service included), whose price is unverified (estimate) at about 30 EUR net per head, which would break the catering target. Hohenstein Catering was found only in a directory listing with no price and is not recommended.</p>
+<table>
+<thead><tr><th>Caterer</th><th>Menu / style</th><th>Dietary coverage</th><th>Cost per head</th><th>Total cost</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>heycater (buffet)</td><td>Buffet menus from 23.90 to 32.90 EUR net per person; Green Berlin Buffet with Vegan Currywurst from 25.90</td><td>Caterers usually offer vegan, vegetarian and gluten-free variations; minimum 10 guests</td><td>25.90 EUR net (confirmed on the page)</td><td>80 x 25.90 = 2,072 EUR net (about 2,466 EUR gross)</td><td><a href="https://www.heycater.com/en/catering-berlin-buffet" target="_blank" rel="noopener">https://www.heycater.com/en/catering-berlin-buffet</a></td></tr>
+<tr><td>heycater (finger food / flying buffet)</td><td>Finger food from 19.90 to 26.90 EUR net per person</td><td>Every menu also available vegan, vegetarian, gluten-free and lactose-free; 2-3 business days notice</td><td>19.90 to 26.90 EUR net</td><td>Used only as a small add-on for the late snack</td><td><a href="https://www.heycater.com/en/catering-berlin-fingerfood" target="_blank" rel="noopener">https://www.heycater.com/en/catering-berlin-fingerfood</a></td></tr>
+<tr><td>Bella&amp;Bona (fallback)</td><td>Hot buffets, packages, finger food; delivery, setup and service included</td><td>Vegan, vegetarian, halal, gluten-free, lactose-free variants</td><td>30 EUR net, unverified (estimate); its pricing guide gives 15-40 EUR per head for buffets</td><td>80 x 30 = 2,400 EUR net, unverified (estimate)</td><td><a href="https://bellabona.com/berlin-catering" target="_blank" rel="noopener">https://bellabona.com/berlin-catering</a></td></tr>
+<tr><td>Hohenstein Catering GmbH</td><td>Buffet with linens and staff (directory listing only)</td><td>Not confirmed</td><td>No price found; not recommended</td><td>Not available</td><td><a href="https://bridebook.com/de/wedding-catering/hohenstein-catering-gmbh-berlin-berlin-deBXLRQdwY" target="_blank" rel="noopener">https://bridebook.com/de/wedding-catering/hohenstein-catering-gmbh-berlin-berlin-deBXLRQdwY</a></td></tr>
+</tbody>
+</table>
+<p>Marketplace prices are net; 19% VAT is added as a conservative assumption (unverified (estimate); a 7% rate may apply to food without service).</p>
+<h3>Service timetable</h3>
+<table>
+<thead><tr><th>Time</th><th>Service</th></tr></thead>
+<tbody>
+<tr><td>18:00-19:00</td><td>Arrival, welcome drink and canapes</td></tr>
+<tr><td>19:00-19:50</td><td>Dinner buffet (starters, mains, dessert table open); mains finished by 19:50</td></tr>
+<tr><td>19:50-20:20</td><td>Kitchen and service pause; no food service during the awards, only drinks at the bar</td></tr>
+<tr><td>20:20-21:15</td><td>Dessert table and coffee/tea remain open for self-service; live music</td></tr>
+<tr><td>21:15-22:15</td><td>Late snack, self-service (leftovers may stay out to 22:45)</td></tr>
+<tr><td>to 23:00</td><td>Bar only</td></tr>
+</tbody>
+</table>
+<h3>Menu proposal</h3>
+<p>Dish names are illustrative; the final menu is fixed with the quoted caterer.</p>
+<ul>
+<li><b>Welcome:</b> sparkling wine or alcohol-free elderflower sparkle, with vegan canapes (beetroot hummus cups, tomato-basil crostini on gluten-free bread).</li>
+<li><b>Starters:</b> seasonal winter salad with roasted root vegetables and pomegranate (vegan, gluten-free), pumpkin-ginger soup in cups (vegan, gluten-free), cheese and antipasti board (vegetarian, gluten-free cracker option).</li>
+<li><b>Mains:</b> vegan lentil and vegetable stew or lentil patties with potatoes (vegan, gluten-free), vegetarian gratin or baked polenta with mushrooms (vegetarian, gluten-free), plus one meat or fish main (for example chicken with roasted vegetables, allergens labelled). Sides: roasted potatoes, seasonal vegetables, rice or quinoa. Two parallel buffet lines serve 80 guests within 50 minutes.</li>
+<li><b>Dessert (from 19:45, open until about 21:00):</b> fruit and vegan chocolate mousse (gluten-free), baked apple, gluten-free brownie, cookies and stollen; coffee and tea.</li>
+<li><b>Late snack (21:15-22:15):</b> mini falafel, mini quiche or vegan sliders, with a vegan and a gluten-free choice, self-service.</li>
+<li><b>Drinks (18:00-23:00), about 14 EUR per head:</b> sparkling wine on arrival, one house red and one white wine, Pils, alcohol-free beer, still and sparkling water, juices, soft drinks, coffee and tea.</li>
+<li><b>Service notes:</b> every dish labelled for vegan, vegetarian, gluten-free and main allergens. Gluten-free dishes are prepared separately and served first with their own utensils. Order well ahead for a December Saturday (5-7 business days is the minimum advised for gluten-free). Buffet tables and the bar should be step-free with wheelchair-passable aisles, and a staff member can serve guests who cannot queue.</li>
+</ul>
+<h3>Dietary coverage</h3>
+<table>
+<thead><tr><th>Constraint</th><th>Guests</th><th>Covered by</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Vegetarian</td><td>count not given; plan covers all 80</td><td>Vegetarian mains, cheese board, vegetarian desserts</td><td>covered</td></tr>
+<tr><td>Vegan</td><td>count not given; plan covers all 80</td><td>Vegan-first buffet, vegan salads, soups, sides, mousse and late snack</td><td>covered</td></tr>
+<tr><td>Gluten-free</td><td>count not given; plan covers all 80</td><td>Gluten-free salads, soups, stew, potatoes, rice, polenta, mousse and brownie; separate preparation and utensils; allergen labels</td><td>covered</td></tr>
+<tr><td>Alcohol-free</td><td>count not given</td><td>Alcohol-free sparkle, alcohol-free beer, water, juices, soft drinks</td><td>covered</td></tr>
+</tbody>
+</table>
+<h3>Catering cost</h3>
+<table>
+<thead><tr><th>Item</th><th>Basis</th><th>Net</th><th>Gross (incl. 19% VAT, unverified (estimate))</th></tr></thead>
+<tbody>
+<tr><td>Dinner buffet</td><td>80 x 25.90 EUR net per head (sourced)</td><td>2,072.00 EUR</td><td>2,465.68 EUR</td></tr>
+<tr><td>Dessert and late snack extras</td><td>80 x 4.00 EUR net per head (unverified (estimate))</td><td>320.00 EUR</td><td>380.80 EUR</td></tr>
+<tr><td>Service staff</td><td>3 staff x 5 hours x 39 EUR per hour (unverified (estimate))</td><td>585.00 EUR</td><td>696.15 EUR</td></tr>
+<tr><td>Drinks package</td><td>80 x 14 EUR per head (unverified (estimate))</td><td>not split</td><td>1,120.00 EUR</td></tr>
+<tr><td>Equipment (cutlery, glasses, platters)</td><td>unverified (estimate); may be booked separately</td><td>included</td><td>included</td></tr>
+</tbody>
+</table>
+<p>Total about 4,663 EUR gross (4,662.63), about 58 EUR per head, under the 4,800 EUR target. Not included: coat check staff, venue corkage or an outside-caterer fee (unverified (estimate), possibly extra). A 7% VAT rate on food would lower the food lines by about 300 EUR; the 32.90 EUR "International" buffet would add about 670 EUR gross and is not used. All estimates must be confirmed in the quote request.</p>
+  </section>
+
+  <section id="program"><h2>Entertainment &amp; Program</h2>
+<p><b>Program structure:</b> welcome speech (18:45-19:00) by a company executive; award ceremony (20:00-20:20) with 5-8 awards at about 2.5 minutes each, the host as MC and a presenter handing over each award (category announced, one-line citation, short acceptance, photo on stage); closing words (22:45-23:00). No external MC and no DJ are planned; the live band covers the music. If the stage cannot be reached by a recipient and no ramp is available, that recipient is presented at floor level in front of the stage with the same microphone and photo. Language is English and/or German as the company prefers.</p>
+<table>
+<thead><tr><th>Vendor / act</th><th>Role</th><th>Cost</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>la la Luxe (Berlin acoustic duo, trio or quartet with guitar, vocals, saxophone, upright bass)</td><td>Live music, 2 sets of 45 minutes (trio format suggested); sound check 16:30-17:30 before doors</td><td>1,550 EUR flat (unverified (estimate); the page lists no price and asks for a quote)</td><td><a href="https://sellwerk.de/firmenprofil/la-la-luxe--akustik-duo-berlin--eventband--hochzeitsband" target="_blank" rel="noopener">https://sellwerk.de/firmenprofil/la-la-luxe--akustik-duo-berlin--eventband--hochzeitsband</a></td></tr>
+<tr><td>Event Paradies Nimaro GmbH (Berlin-Tempelhof photo booth rental)</td><td>Photo booth, open 21:15-22:45, package with 150 prints plus all images digital</td><td>220 EUR per event (price on the vendor's page; the digital-only package is 150 EUR); delivery, setup and attendant not confirmed (unverified (estimate))</td><td><a href="https://www.kleinanzeigen.de/pro/event-paradies" target="_blank" rel="noopener">https://www.kleinanzeigen.de/pro/event-paradies</a></td></tr>
+</tbody>
+</table>
+<p>The band must confirm its own equipment needs with the venue. Stage height and ramp availability are unverified (estimate).</p>
+<p><b>Entertainment cost:</b> live band 1,550 EUR (unverified (estimate)), photo booth 220 EUR, MC and DJ 0 EUR. Total 1,770 EUR before contingency; the band fee is to be confirmed by quote.</p>
+  </section>
+
+  <section id="decor-av"><h2>Decor &amp; AV</h2>
+<h3>Decor concept</h3>
+<ul>
+<li>Palette: deep green, warm white and brass/gold accents with natural winter materials (fir branches, pine cones, dried orange slices, cream fabric).</li>
+<li>Lighting mood: warm white, using the venue's own lighting. LED candles only (no open flame), no confetti, no fog or smoke. Venue decor rules are not stated (unverified (estimate)); confirm before booking.</li>
+<li>Zoning: a smaller zone for 80 guests with the stage at one end, dining tables in the middle and a lounge corner, divided by plants or fabric drapes. Whether a partial layout is offered is unverified (estimate).</li>
+<li>Tables: cream linen, a low centerpiece of fir branches and LED tea lights, one printed menu card per place.</li>
+<li>Stage: the venue stage with a simple backdrop and a small sign with the company name and year. A small table beside the stage holds the 5-8 trophies or certificates.</li>
+<li>Accessibility: at least 1.2 m free aisles, open wheelchair spaces at several tables, cables covered with mats or ramps.</li>
+</ul>
+<h3>Sound, light and AV</h3>
+<ul>
+<li>Use the venue's in-house PA, stage lighting, projector and LED screen for the band, the ceremony and award slides. This assumes the in-house AV is included, which needs written confirmation in the venue quote (unverified (estimate)). No separate sound, light or projector rental is planned.</li>
+<li>Microphones: not listed on the venue pages. One wireless/handheld set for the host and presenters is budgeted at 150 EUR flat (unverified (estimate)); dropped if the venue confirms microphones.</li>
+<li>Technician (setup, sound check, operating through the ceremony): 400 EUR for the evening (unverified (estimate)). Ask the venue first.</li>
+<li>The band must not bring a duplicate PA. Venue power capacity, curfew and noise limit are not stated (unverified (estimate)); confirm.</li>
+</ul>
+<h3>Photo and video</h3>
+<p>One photographer for about 3 hours (arrival and welcome from 18:00, awards and band highlights until about 21:00), 80-150 edited images in an online gallery within about 1-2 weeks. No video (budget). Guests are informed about photography by a notice at the entrance (data protection). Planning figure 800 EUR, the low end of an 800-3,000 EUR range on the vendor's page (unverified (estimate)).</p>
+<h3>Rentals</h3>
+<table>
+<thead><tr><th>Item</th><th>Quantity</th><th>Planning cost</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td>Lounge corner (venue's own lounge furniture)</td><td>1 set</td><td>0 EUR</td><td>on site per venue listing; inclusion to be confirmed</td></tr>
+<tr><td>Dinner tables and chairs (venue's own)</td><td>80 seats</td><td>0 EUR</td><td>assumed supplied by the venue; if not, a quote is needed and the total rises</td></tr>
+<tr><td>Table linen (cloths, napkins) for 10 tables, standing-table covers</td><td>1 lot</td><td>150 EUR flat</td><td>unverified (estimate); price on request</td></tr>
+<tr><td>Extra standing tables (cocktail), if the venue has too few</td><td>up to 6</td><td>50 EUR flat</td><td>unverified (estimate)</td></tr>
+<tr><td>Portable stage ramp (nice-to-have, ask the venue)</td><td>1</td><td>0 EUR planned, reserve 100 EUR</td><td>unverified (estimate); covered by the reserve</td></tr>
+<tr><td>Heaters or tents</td><td>0</td><td>0 EUR</td><td>not needed: fully indoor event</td></tr>
+</tbody>
+</table>
+<h3>Vendor options</h3>
+<table>
+<thead><tr><th>Vendor</th><th>Service</th><th>Cost</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>D&amp;F Eventverleih (Berlin)</td><td>Microphone set rental (fallback if the venue has none)</td><td>150 EUR flat (unverified (estimate); price not shown on the page)</td><td><a href="https://www.kleinanzeigen.de/pro/DundFEventverleih" target="_blank" rel="noopener">https://www.kleinanzeigen.de/pro/DundFEventverleih</a></td></tr>
+<tr><td>XPulse (Berlin)</td><td>Corporate event photography</td><td>800-3,000 EUR range; planned 800 EUR for photo only (unverified (estimate))</td><td><a href="https://www.xpulse.space/corporate-event-photography-in-berlin-blog" target="_blank" rel="noopener">https://www.xpulse.space/corporate-event-photography-in-berlin-blog</a></td></tr>
+<tr><td>ambiente light &amp; Sound Veranstaltungstechnik GmbH (Berlin)</td><td>Technician, sound and microphones if the venue cannot supply them</td><td>Quote on request; planned 400 EUR for the evening (unverified (estimate))</td><td><a href="https://www.messen.de/de/dienstleister/ambiente-light-sound-veranstaltungstechnik-gmbh-i4huipxqz1" target="_blank" rel="noopener">https://www.messen.de/de/dienstleister/ambiente-light-sound-veranstaltungstechnik-gmbh-i4huipxqz1</a></td></tr>
+<tr><td>CS Verleihservice (Berlin Prenzlauer Berg)</td><td>Table linen, standing tables, bar stools</td><td>Quote on request; planned 200 EUR combined with linen (unverified (estimate))</td><td><a href="https://www.messen.de/de/dienstleister/cs-verleihservice-kk5oi7eg2i" target="_blank" rel="noopener">https://www.messen.de/de/dienstleister/cs-verleihservice-kk5oi7eg2i</a></td></tr>
+<tr><td>Balcony am Fernsehturm (the venue, not an extra vendor)</td><td>In-house stage, PA, sound, lighting, projector, LED screen, lounge furniture</td><td>Included in venue hire if confirmed (no separate cost)</td><td><a href="https://venuu.com/de/de/venues/balcony-am-fernsehturm" target="_blank" rel="noopener">https://venuu.com/de/de/venues/balcony-am-fernsehturm</a></td></tr>
+</tbody>
+</table>
+<p>Two other rental companies were checked and removed because their pages showed Munich-based firms.</p>
+<h3>Decor and AV cost</h3>
+<table>
+<thead><tr><th>Item</th><th>Cost (EUR)</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td>Microphone set (if the venue has none)</td><td>150</td><td>unverified (estimate)</td></tr>
+<tr><td>Sound technician (assumed extra at the venue)</td><td>400</td><td>unverified (estimate)</td></tr>
+<tr><td>Photographer (3 hours, edited gallery)</td><td>800</td><td>low end of vendor range, unverified (estimate)</td></tr>
+<tr><td>Decor materials (greenery, LED candles, backdrop, sign, menu cards)</td><td>200</td><td>unverified (estimate)</td></tr>
+<tr><td>Linen and extra standing tables</td><td>200</td><td>unverified (estimate)</td></tr>
+<tr><td>Reserve (portable stage ramp, delivery, missing furniture)</td><td>100</td><td>unverified (estimate)</td></tr>
+<tr><td><b>Total decor and AV</b></td><td><b>1,850</b></td><td></td></tr>
+</tbody>
+</table>
+<p>If the venue confirms a technician and microphones in its price, the total falls to about 1,300 EUR. If the venue does not supply tables, chairs or lounge furniture, the total rises and a rental quote is needed.</p>
+  </section>
+
+  <section id="logistics"><h2>Logistics &amp; Staffing</h2>
+<p>Assumed venue access is 15:00-00:00 (about 3 hours setup before doors and 1 hour teardown after 23:00); this is unverified (estimate) and must be confirmed in the venue quote.</p>
+<h3>Staffing</h3>
+<table>
+<thead><tr><th>Role</th><th>Headcount</th><th>Shift</th><th>Hours</th><th>Rate (EUR per hour)</th><th>Cost (EUR)</th></tr></thead>
+<tbody>
+<tr><td>Coat check attendants</td><td>2</td><td>17:45-23:15</td><td>5.5 each</td><td>28 (unverified (estimate))</td><td>308</td></tr>
+<tr><td>Accessibility assistance (meets wheelchair users at the step-free drop-off, entrance and lift, guides to the accessible toilet once confirmed, keeps aisles clear, helps at floor level at the awards if needed)</td><td>1</td><td>17:45-23:15</td><td>5.5</td><td>28 (unverified (estimate))</td><td>154</td></tr>
+<tr><td>Door / security</td><td>1</td><td>17:45-23:15</td><td>5.5</td><td>Lean option: no paid security; the venue's door or lift staff if included, otherwise the event lead's team</td><td>0</td></tr>
+<tr><td>Event lead / floor manager (company employee)</td><td>1</td><td>15:00-00:00</td><td>9</td><td>internal</td><td>0</td></tr>
+<tr><td>Company host / MC</td><td>1</td><td>17:30-23:00</td><td>5.5</td><td>internal</td><td>0</td></tr>
+<tr><td>Standby volunteer (company employee)</td><td>1</td><td>17:45-23:15</td><td>5.5</td><td>internal</td><td>0</td></tr>
+<tr><td>Technician (in Decor &amp; AV; also runs the band sound check 16:30-17:30)</td><td>1</td><td>15:30-23:30</td><td>8</td><td>in Decor &amp; AV cost</td><td>0 here</td></tr>
+<tr><td>Caterer service staff (in Catering cost)</td><td>3</td><td>per catering plan</td><td>per catering plan</td><td>in Catering cost</td><td>0 here</td></tr>
+</tbody>
+</table>
+<p>New staffing cost is 462 EUR (coat check 308 plus accessibility assistance 154), rates unverified (estimate). Coat check peaks at arrival (18:00-18:45) and collection (from 22:45); both attendants stay for both. The caterer must confirm that its 3 staff (budgeted at 5 hours) cover about 17:30-23:00, including welcome drinks from 18:00 and the bar to 23:00; extra hours would be an added cost.</p>
+<h3>Setup and teardown timeline</h3>
+<table>
+<thead><tr><th>Time</th><th>Activity</th><th>Who</th></tr></thead>
+<tbody>
+<tr><td>15:00</td><td>Venue access, key and lift handover, walk-through; confirm the accessible toilet location (open item), the step-free drop-off point, and whether a portable stage ramp is available</td><td>Event lead, venue</td></tr>
+<tr><td>15:00-16:00</td><td>Delivery window: table linen, extra standing tables, decor materials</td><td>Rental vendor</td></tr>
+<tr><td>15:30-16:30</td><td>Technician arrives; in-house PA, lighting, projector and microphone check; stage backdrop and award table</td><td>Technician</td></tr>
+<tr><td>16:00-17:00</td><td>Decor and zone layout, LED candles, menu cards, coat check area</td><td>Event lead, helpers</td></tr>
+<tr><td>16:30-17:30</td><td>Band load-in and full sound check, before doors</td><td>Band, technician</td></tr>
+<tr><td>16:30-17:30</td><td>Caterer arrival: unload, buffet and bar setup, gluten-free items separated, two serving lines</td><td>Caterer</td></tr>
+<tr><td>17:15</td><td>Photographer and photo booth arrive (booth ready by 21:15 at the latest)</td><td>Vendors</td></tr>
+<tr><td>17:30</td><td>Host and event lead briefing; staff briefing on roles, allergen labels, accessibility route, emergency exits</td><td>Event lead</td></tr>
+<tr><td>17:45</td><td>Coat check and accessibility assistant start; final walk-through, accessible route cleared, background playlist on</td><td>Event lead, staff</td></tr>
+<tr><td>18:00</td><td>Doors open: arrival, coat check, welcome drinks (to 18:45)</td><td></td></tr>
+<tr><td>18:45-19:00</td><td>Welcome speech</td><td>Host</td></tr>
+<tr><td>19:00-19:50</td><td>Dinner buffet</td><td>Caterer</td></tr>
+<tr><td>19:50-20:00</td><td>Plates cleared quietly, stage and microphones checked</td><td>Caterer, technician</td></tr>
+<tr><td>20:00-20:20</td><td>Award ceremony (no food service; bar only); a recipient who cannot use the stage steps is presented at floor level if no ramp is available</td><td>Host, technician, accessibility assistant</td></tr>
+<tr><td>20:20-20:30</td><td>Break and bar; quick stage changeover for the band</td><td>Technician</td></tr>
+<tr><td>21:15</td><td>Late snack service starts (self-service); photo booth opens</td><td>Caterer, vendor</td></tr>
+<tr><td>22:45-23:00</td><td>Closing words; coat collection starts at 22:45</td><td>Host, coat check</td></tr>
+<tr><td>23:00</td><td>Last guests leave; coat check closes 23:15</td><td>Staff</td></tr>
+<tr><td>23:00-23:45</td><td>Band and photo booth load-out, caterer clears buffet, glassware and waste</td><td>Vendors</td></tr>
+<tr><td>23:45-00:00</td><td>Final walk-through, damage check, key return</td><td>Event lead, venue</td></tr>
+<tr><td>Next day</td><td>Rental pickup and remaining equipment return (agree in rental contracts)</td><td>Rental vendors</td></tr>
+</tbody>
+</table>
+<p>Total venue hire window: 15:00-00:00 (9 hours). Confirm the curfew and that load-out after 23:00 is allowed.</p>
+<h3>Guest transport and parking</h3>
+<ul>
+<li><b>Public transport:</b> the venue is at Alexanderplatz. A search summary lists U2, U5, U8, S7, S9, some regional trains, trams M2, M4, M5 and several night buses (unverified (estimate); re-check in the BVG journey planner in early December). Step-free access at the Alexanderplatz stations is not verified (unverified (estimate)); guests with wheelchairs should check BVG's accessibility information.</li>
+<li><b>Late return (about 23:00-23:30):</b> U-Bahn and S-Bahn run all night on Friday and Saturday nights at about 15-minute intervals, with night buses for the rest; a regular single ticket (3.80 EUR) applies with no night surcharge. 12 December is a Saturday, so full night service is expected. Mention the night lines and coat check hours in the closing words.</li>
+<li><b>Parking:</b> the car park at Alexanderstrasse 7 has 600 covered spaces, is open 24/7, costs 2.00 EUR per hour or 24.00 EUR per 24 hours, and holders of a European blue or orange disabled parking permit park free for up to 24 hours. Whether guests of the venue use this car park is not stated (unverified (estimate)); ask the venue. Alternative: Q-Park Am Alexanderplatz, about 210 m from Alexanderplatz with online pre-booking; its capacity, address and prices are not on the operator page (unverified (estimate)). Guests pay their own parking.</li>
+<li><b>Accessible drop-off and route:</b> the venue lists four lifts and a step-free entrance, but no drop-off point. Ask the venue to name a step-free drop-off point on Alexanderstrasse; the accessibility assistant waits there from 17:45 to 18:30 and the invitation should state it. The invitation should also ask guests to report access needs by a set date. The accessible toilet location is an open item until the venue confirms it in writing; do not promise it to guests before then.</li>
+<li><b>Optional accessible taxi:</b> 100 EUR for vouchers for up to 2 wheelchair users who cannot use public transport (unverified (estimate), about 2 rides at about 50 EUR). Issued only on request after registration.</li>
+<li><b>Transit risk:</b> track works at Alexanderplatz (tracks 1/2) end on the event day itself, 12 December 2026. A report of single-track U2 running could not be confirmed (unverified (estimate)). Re-check disruptions with BVG 3 days before.</li>
+<li><b>Guest note for the invitation:</b> warm coats and sturdy shoes; coat check is staffed from 17:45.</li>
+</ul>
+<h3>Permits and insurance</h3>
+<ul>
+<li><b>Alcohol permit (Gestattung):</b> needed in Berlin when alcohol is served commercially and temporarily at an event; fee 11 to 869 EUR, about 2 weeks processing, applied for at least 2 weeks before. The page does not say whether it applies to a closed company party. Assumption (unverified (estimate)): not needed if the caterer or venue holds the licence; get written confirmation from the caterer. Not costed; if the company must apply, up to 869 EUR would come from the contingency.</li>
+<li><b>Music rights (GEMA):</b> public music must be registered beforehand; a source example gives about 100 EUR for 80 guests with 5 hours of music in a 100 m2 room. Planned 100 EUR (unverified (estimate), as the example differs). Ask the venue and the band who registers.</li>
+<li><b>Noise:</b> the venue's noise limit and curfew are not stated (unverified (estimate)); confirm before booking.</li>
+<li><b>Liability insurance:</b> no legal requirement was verified. Check the company's existing business liability policy first (0 EUR). If it does not cover the event, a one-day policy of roughly 150 EUR (unverified (estimate), no quote) would be needed; it is not in the planned total and would come from the contingency. Vendors should show their own liability cover.</li>
+<li><b>Data protection:</b> photography notice at the entrance, no cost.</li>
+</ul>
+<h3>Open items to confirm</h3>
+<ol>
+<li>Whether the venue includes a technician, door staff, furniture and microphones. If it includes the technician, the 400 EUR in Decor &amp; AV falls away.</li>
+<li>Caterer staff hours (see above).</li>
+<li>Venue access hours from 15:00 to 00:00.</li>
+<li>Accessible toilets (required; confirm in the booking quote). The stage ramp is a nice-to-have only.</li>
+</ol>
+<h3>Logistics cost</h3>
+<table>
+<thead><tr><th>Item</th><th>Cost (EUR)</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td>Staffing: 2 coat check attendants (5.5 h each)</td><td>308</td><td>28 EUR per hour, unverified (estimate)</td></tr>
+<tr><td>Staffing: 1 accessibility assistant (5.5 h)</td><td>154</td><td>28 EUR per hour, unverified (estimate)</td></tr>
+<tr><td>Security</td><td>0</td><td>not bought; venue door staff or company volunteers</td></tr>
+<tr><td>Permits (alcohol Gestattung)</td><td>0</td><td>caterer or venue assumed to hold the licence; up to 869 EUR would come from the contingency</td></tr>
+<tr><td>GEMA music licence</td><td>100</td><td>unverified (estimate)</td></tr>
+<tr><td>Event liability insurance</td><td>0</td><td>existing company policy to be checked; about 150 EUR only if not covered, from the contingency</td></tr>
+<tr><td>Transport (2 accessible taxi vouchers)</td><td>100</td><td>unverified (estimate)</td></tr>
+<tr><td>Parking</td><td>0</td><td>disabled permit holders park free up to 24 hours; others pay 2.00 EUR per hour themselves</td></tr>
+<tr><td><b>Total logistics cost</b></td><td><b>662</b></td><td>before contingency</td></tr>
+</tbody>
+</table>
+  </section>
+
+  <section id="budget"><h2>Budget</h2>
+<p>Limit: 12,000 EUR including a 10% contingency. Almost every figure is unverified (estimate); see the Basis column.</p>
+<table>
+<thead><tr><th>Category</th><th>Item</th><th>Cost</th><th>Basis</th></tr></thead>
+<tbody>
+<tr><td>Venue</td><td>Balcony am Fernsehturm, evening hire including setup and teardown</td><td>1,500 EUR</td><td>unverified (estimate); listed base is from 500 EUR per day</td></tr>
+<tr><td>Catering</td><td>Dinner buffet, 80 x 25.90 EUR net, gross</td><td>2,466 EUR</td><td>sourced net price, 19% VAT unverified (estimate)</td></tr>
+<tr><td>Catering</td><td>Dessert and late snack extras, 80 x 4.00 EUR net, gross</td><td>381 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Catering</td><td>Service staff, 3 x 5 h x 39 EUR, gross</td><td>696 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Catering</td><td>Drinks package, 80 x 14 EUR</td><td>1,120 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Entertainment and Program</td><td>Live band (la la Luxe, trio, 2 sets)</td><td>1,550 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Entertainment and Program</td><td>Photo booth (150 prints plus digital)</td><td>220 EUR</td><td>listed price on vendor page; delivery and attendant unverified (estimate)</td></tr>
+<tr><td>Entertainment and Program</td><td>MC (internal) and DJ (not planned)</td><td>0 EUR</td><td>no cost</td></tr>
+<tr><td>Decor and AV</td><td>Microphone set (dropped if venue has one)</td><td>150 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Decor and AV</td><td>Sound technician (assumed extra at the venue)</td><td>400 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Decor and AV</td><td>Photographer (3 hours, edited gallery)</td><td>800 EUR</td><td>unverified (estimate), low end of vendor range</td></tr>
+<tr><td>Decor and AV</td><td>Decor materials</td><td>200 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Decor and AV</td><td>Linen and extra standing tables</td><td>200 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Decor and AV</td><td>Reserve (stage ramp, delivery, missing furniture)</td><td>100 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Logistics and Staffing</td><td>Coat check, 2 attendants x 5.5 h x 28 EUR</td><td>308 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Logistics and Staffing</td><td>Accessibility assistant, 1 x 5.5 h x 28 EUR</td><td>154 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Logistics and Staffing</td><td>Security, permits, insurance, parking</td><td>0 EUR</td><td>not bought or assumed covered elsewhere</td></tr>
+<tr><td>Logistics and Staffing</td><td>GEMA music licence</td><td>100 EUR</td><td>unverified (estimate)</td></tr>
+<tr><td>Logistics and Staffing</td><td>Accessible taxi vouchers (2 rides)</td><td>100 EUR</td><td>unverified (estimate)</td></tr>
+</tbody>
+</table>
+<h3>Category subtotals</h3>
+<ul>
+<li>Venue: 1,500 EUR</li>
+<li>Catering: 2,466 + 381 + 696 + 1,120 = 4,663 EUR</li>
+<li>Entertainment and Program: 1,550 + 220 + 0 = 1,770 EUR</li>
+<li>Decor and AV: 150 + 400 + 800 + 200 + 200 + 100 = 1,850 EUR</li>
+<li>Logistics and Staffing: 308 + 154 + 0 + 100 + 100 = 662 EUR</li>
+</ul>
+<h3>Totals</h3>
+<ul>
+<li>Subtotal: 1,500 + 4,663 + 1,770 + 1,850 + 662 = 10,445.00 EUR</li>
+<li>Contingency (10%): 1,044.50 EUR</li>
+<li><b>Grand total: 11,489.50 EUR</b></li>
+</ul>
+<p><b>Comparison to limit:</b> limit 12,000.00 EUR, grand total 11,489.50 EUR, so 510.50 EUR under the limit (within limit). Before contingency, the subtotal of 10,445.00 EUR is 355.00 EUR under the 10,800.00 EUR ceiling.</p>
+<div class="note"><b>Not costed (covered only by the contingency if they arise):</b> venue corkage or outside-caterer fee, an alcohol permit (up to 869 EUR), a one-day liability policy (about 150 EUR, only if the company policy does not cover the event), a temporary accessible toilet unit if the venue cannot confirm one (no source, no quote), extra caterer staff hours (39 EUR per hour), and venue furniture if it is not included.</div>
+<p><b>Margin:</b> the margin is thin and rests almost entirely on estimates, so real quotes could change the result. Shares of the subtotal: catering 44.6%, decor and AV 17.7%, entertainment 16.9%, venue 14.4%, logistics 6.3%. The main upward risks are a venue quote above 1,500 EUR, a technician and furniture not included by the venue, and the band fee.</p>
+  </section>
+
+  <section id="risks"><h2>Risks</h2>
+<table>
+<thead><tr><th>Risk</th><th>Mitigation</th><th>Named fallback</th></tr></thead>
+<tbody>
+<tr><td>Venue cannot confirm an accessible toilet (required, open item)</td><td>Put the written question into the booking enquiry; make written confirmation a condition of booking; site visit in November to check door width, turning space and grab rails</td><td>Mokka Mitte Bar (equally unverified, base price 1,785 EUR, so only if it confirms in writing). If neither confirms, the venue choice must be revisited. A temporary accessible toilet unit is not costed and would come from the contingency</td></tr>
+<tr><td>Venue price above 1,500 EUR, or furniture, technician or projector not included</td><td>Get a written quote stating what is included</td><td>Mokka Mitte Bar; budget increases or contingency absorbs the difference</td></tr>
+<tr><td>Caterer no-show or late (December Saturday peak, 5-7 business days notice advised)</td><td>Book by early November, written confirmation of arrival 16:30-17:30, phone check at 14:00 on the day</td><td>Bella&amp;Bona; last resort: venue in-house catering (optional, unpriced)</td></tr>
+<tr><td>Band no-show or illness</td><td>Contract with a named substitute, confirm 1 week ahead; sound check 16:30-17:30 shows readiness before doors</td><td>Playlist through the venue PA; photo booth and networking run longer; name a substitute act</td></tr>
+<tr><td>Stage has steps and no ramp available (nice-to-have only)</td><td>Ask the venue for a portable ramp and its cost; 100 EUR reserve in Decor &amp; AV</td><td>Present award recipients at floor level in front of the stage with the same microphone and photo; no change to the schedule</td></tr>
+<tr><td>Venue curfew or load-out limit before 00:00</td><td>Confirm in writing</td><td>Shift teardown of rentals to the next morning (already planned)</td></tr>
+<tr><td>Weather (ice, snow, transit disruption)</td><td>Indoor event, no outdoor segments, so no weather backup is needed (<span class="risk-low">low risk</span>, based on past data only). Re-check the forecast from 26 November 2026 and 3 days before; send a travel note</td><td>Taxi vouchers for wheelchair users (100 EUR); welcome speech may slip 10 minutes if arrivals are delayed, absorbed by the 19:50-20:00 buffer</td></tr>
+<tr><td>Staff illness (coat check or accessibility assistant)</td><td>Standby company volunteer named in advance</td><td>Event lead covers coat check; ask the agency for a replacement</td></tr>
+<tr><td>Power or sound failure</td><td>Technician with spare cables; confirm power capacity with the venue</td><td>Acoustic band set and handheld microphone without PA for speeches</td></tr>
+<tr><td>Guest count change</td><td>Final headcount to caterer 7 days before</td><td>Buffet portions for 85 (about 5 more guests, about 130 EUR gross, absorbed by the contingency)</td></tr>
+<tr><td>Dinner or awards overrun (buffet for 80 in 50 minutes)</td><td>Two serving lines; table release by group; host holds the 20:00 awards start with the 10-minute buffer</td><td>Awards may start by 20:10 and shorten the 20:20-20:30 break to 5 minutes; band set times stay fixed</td></tr>
+<tr><td>Coat collection queue at 23:00</td><td>Collection starts at 22:45 with 2 attendants plus the standby volunteer</td><td>Coat check stays open to 23:15</td></tr>
+<tr><td>Budget margin thin; uncosted items (alcohol permit, insurance, corkage)</td><td>Confirm all estimates by quote; check existing company insurance and caterer licence early</td><td>Contingency of 1,044.50 EUR; 510.50 EUR remains under the limit</td></tr>
+</tbody>
+</table>
+  </section>
+
+  <section id="sources"><h2>Sources</h2>
+<ul>
+<li><a href="https://venuu.com/de/de/venues/balcony-am-fernsehturm" target="_blank" rel="noopener">Balcony am Fernsehturm on Venuu</a> - supports: capacity, price from 500 EUR per day, four lifts, equipment, outside food and alcohol allowed</li>
+<li><a href="https://www.eventlocations.com/de/venues/balcony-am-fehrnsehturm-berlin" target="_blank" rel="noopener">Balcony am Fernsehturm on eventlocations.com</a> - supports: four lifts, projector, furniture, cloakroom, 10 parking spaces</li>
+<li><a href="https://www.zipcube.com/de/venues/balcony-am-fernsehturm/48037" target="_blank" rel="noopener">Balcony am Fernsehturm on zipcube</a> - supports: barrier-free access via four lifts, price discrepancy</li>
+<li><a href="https://www.bbfc-cloud.de/en/public/locations/balkony-am-fernsehturm" target="_blank" rel="noopener">Balkony am Fernsehturm on bbfc-cloud.de</a> - supports: step-free access and lift</li>
+<li><a href="https://www.eventlocations.com/de/venues/mokka-mitte-bar-berlin" target="_blank" rel="noopener">Mokka Mitte Bar on eventlocations.com</a> - supports: fallback venue, capacity, stage, price from 1,785 EUR</li>
+<li><a href="https://www.eventlocations.com/en/venues/allabout-cafe-mitte-berlin" target="_blank" rel="noopener">Allabout Cafe Mitte on eventlocations.com</a> - supports: alternative venue, capacity, hours</li>
+<li><a href="https://www.eventlocations.com/en/venues/moms-limousine-service-berlin" target="_blank" rel="noopener">Mom's Limousine Service Berlin on eventlocations.com</a> - supports: excluded venue (capacity 60)</li>
+<li><a href="https://archive-api.open-meteo.com/v1/archive" target="_blank" rel="noopener">Open-Meteo Historical Weather API</a> - supports: Berlin 10-14 December 2025 temperature, rain and gust figures</li>
+<li><a href="https://geocoding-api.open-meteo.com/v1/search" target="_blank" rel="noopener">Open-Meteo Geocoding API</a> - supports: Berlin coordinates and timezone</li>
+<li><a href="https://www.heycater.com/en/catering-berlin-buffet" target="_blank" rel="noopener">heycater - Buffet catering Berlin</a> - supports: buffet prices, dietary variations, net-price note</li>
+<li><a href="https://www.heycater.com/en/catering-berlin-fingerfood" target="_blank" rel="noopener">heycater - Finger food catering Berlin</a> - supports: finger food prices, dietary versions, notice period</li>
+<li><a href="https://www.heycater.com/en/catering-berlin-glutenfrei" target="_blank" rel="noopener">heycater - Gluten-free catering Berlin</a> - supports: gluten-free offer, 5-7 business days notice</li>
+<li><a href="https://bellabona.com/berlin-catering" target="_blank" rel="noopener">Bella&amp;Bona - Berlin catering menu</a> - supports: fallback caterer, dietary options, service</li>
+<li><a href="https://bellabona.com/en/blog/corporate-catering-berlin-pricing-guide" target="_blank" rel="noopener">Bella&amp;Bona - Corporate catering Berlin pricing guide</a> - supports: market price ranges, staff hourly rate, beverage costs</li>
+<li><a href="https://bridebook.com/de/wedding-catering/hohenstein-catering-gmbh-berlin-berlin-deBXLRQdwY" target="_blank" rel="noopener">Hohenstein Catering GmbH on Bridebook</a> - supports: listing only, no prices (not recommended)</li>
+<li><a href="https://sellwerk.de/firmenprofil/la-la-luxe--akustik-duo-berlin--eventband--hochzeitsband" target="_blank" rel="noopener">la la Luxe on Sellwerk</a> - supports: live band formats, price on request</li>
+<li><a href="https://www.kleinanzeigen.de/pro/event-paradies" target="_blank" rel="noopener">Event Paradies Nimaro GmbH on Kleinanzeigen</a> - supports: photo booth packages at 150 and 220 EUR</li>
+<li><a href="https://www.kleinanzeigen.de/pro/DundFEventverleih" target="_blank" rel="noopener">D&amp;F Eventverleih on Kleinanzeigen</a> - supports: Berlin equipment rental (microphone price not shown)</li>
+<li><a href="https://www.xpulse.space/corporate-event-photography-in-berlin-blog" target="_blank" rel="noopener">XPulse - corporate event photography in Berlin</a> - supports: photo and video price range 800-3,000 EUR</li>
+<li><a href="https://www.messen.de/de/dienstleister/ambiente-light-sound-veranstaltungstechnik-gmbh-i4huipxqz1" target="_blank" rel="noopener">ambiente light &amp; Sound Veranstaltungstechnik GmbH on messen.de</a> - supports: technician and sound vendor, quote on request</li>
+<li><a href="https://www.messen.de/de/dienstleister/cs-verleihservice-kk5oi7eg2i" target="_blank" rel="noopener">CS Verleihservice on messen.de</a> - supports: linen and standing table rental, no prices listed</li>
+<li><a href="https://www.messen.de/de/dienstleister/different-eventausstattung-gmbh-b1y2b8dyxq" target="_blank" rel="noopener">Different Eventausstattung GmbH on messen.de</a> - supports: checked and removed (Munich company)</li>
+<li><a href="https://www.messen.de/de/dienstleister/suitestuff-gmbh-j7qdrl1o8s" target="_blank" rel="noopener">SUITESTUFF GmbH on messen.de</a> - supports: checked and removed (Munich-area company)</li>
+<li><a href="https://www.bahnhof.de/berlin-alexanderplatz/parkplaetze" target="_blank" rel="noopener">Parking at Berlin Alexanderplatz (bahnhof.de)</a> - supports: car park, 600 spaces, rates, free for disabled permit holders, track works until 12 December 2026</li>
+<li><a href="https://www.q-park.de/en-gb/cities/berlin/poi/alexanderplatz/" target="_blank" rel="noopener">Q-Park Am Alexanderplatz</a> - supports: alternative garage about 210 m away, online pre-booking</li>
+<li><a href="https://www.berlintourism.org/berlin-night-transportation/" target="_blank" rel="noopener">Berlin night transportation (berlintourism.org)</a> - supports: weekend all-night trains, night buses, 3.80 EUR single ticket</li>
+<li><a href="https://service.berlin.de/dienstleistung/327491/" target="_blank" rel="noopener">Gestattung aus besonderem Anlass (service.berlin.de)</a> - supports: temporary alcohol permit, fee and processing time</li>
+<li><a href="https://www.leinetal24.de/leben/geld/profitipps-zur-weihnachtsfeier-musik-nutzen-ohne-gema-aerger-zr-93445649.html" target="_blank" rel="noopener">GEMA tips for company Christmas parties (leinetal24.de)</a> - supports: music registration, about 100 EUR for 80 guests and 5 hours</li>
+</ul>
+  </section>
+</main>
+
+<footer>Event guide prepared on 2026-10-12. Prices marked "unverified (estimate)" are estimates.</footer>
+</body>
+</html>

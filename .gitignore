@@ -1,0 +1,14 @@
+# build output
+bin/
+obj/
+# secrets / local config
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+*.pfx
+*.key
+# misc
+.vs/
+*.user
+__pycache__/
