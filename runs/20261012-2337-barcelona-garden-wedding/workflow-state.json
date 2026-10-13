@@ -1,0 +1,389 @@
+{
+  "run_id": "20261012-2337-barcelona-garden-wedding",
+  "created": "2026-10-12T23:37:56\u002B04:00",
+  "updated": "2026-10-13T20:23:58\u002B04:00",
+  "status": "approved",
+  "current_stage": "html",
+  "revision_count": 2,
+  "requirements_confirmed": true,
+  "agents": {
+    "requirements-formalizer": {
+      "status": "completed",
+      "artifact": "artifacts/requirements.md",
+      "sha256": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c",
+      "input_hashes": {
+        "input.md": "d644fdb70d945cf00ddced3f9aa8debaf4472a254878c04e7df3b9ef3d4da793"
+      },
+      "updated": "2026-10-12T23:38:39\u002B04:00"
+    },
+    "venue-planner": {
+      "status": "running",
+      "artifact": "artifacts/venue.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "weather-outlook": {
+      "status": "running",
+      "artifact": "artifacts/weather.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "catering-planner": {
+      "status": "completed",
+      "artifact": "artifacts/catering.md",
+      "sha256": "2025214b9fdf7ecb409410913c7fa2ad988dfd05a329763c844f63631adf39f3",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c"
+      },
+      "updated": "2026-10-13T11:33:31\u002B04:00"
+    },
+    "program-planner": {
+      "status": "completed",
+      "artifact": "artifacts/program.md",
+      "sha256": "bc67f8b11b7473ced2344b162f68e9a3e746c079eea87e6539fa8dcc58634f6c",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c"
+      },
+      "updated": "2026-10-13T11:33:45\u002B04:00"
+    },
+    "decor-av-planner": {
+      "status": "completed",
+      "artifact": "artifacts/decor-av.md",
+      "sha256": "e7cd9e29cc76489697021951300180809490c96c484715295c5256961c003a80",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c"
+      },
+      "updated": "2026-10-13T11:33:23\u002B04:00"
+    },
+    "logistics-planner": {
+      "status": "completed",
+      "artifact": "artifacts/logistics.md",
+      "sha256": "5358628b6b5f96f4913bd1b00b522002038c15c2ef4b6d6635bd06723afcd726",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c",
+        "catering.md": "2025214b9fdf7ecb409410913c7fa2ad988dfd05a329763c844f63631adf39f3",
+        "program.md": "bc67f8b11b7473ced2344b162f68e9a3e746c079eea87e6539fa8dcc58634f6c",
+        "decor-av.md": "e7cd9e29cc76489697021951300180809490c96c484715295c5256961c003a80"
+      },
+      "updated": "2026-10-13T11:35:08\u002B04:00"
+    },
+    "budget-aggregator": {
+      "status": "running",
+      "artifact": "artifacts/budget.md",
+      "sha256": "51954fed9406eaabcf04e38910666ad949be79a778c94f675072705fcb15fe6e",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c",
+        "catering.md": "2025214b9fdf7ecb409410913c7fa2ad988dfd05a329763c844f63631adf39f3",
+        "program.md": "bc67f8b11b7473ced2344b162f68e9a3e746c079eea87e6539fa8dcc58634f6c",
+        "decor-av.md": "e7cd9e29cc76489697021951300180809490c96c484715295c5256961c003a80",
+        "logistics.md": "5358628b6b5f96f4913bd1b00b522002038c15c2ef4b6d6635bd06723afcd726"
+      },
+      "updated": "2026-10-13T11:39:03\u002B04:00"
+    },
+    "validator": {
+      "status": "completed",
+      "artifact": "artifacts/validation-report.md",
+      "sha256": "a2925a165656b5d250031e0f54b5dd7c104683aad7795852346c220be3dfe02d",
+      "input_hashes": {
+        "requirements.md": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c",
+        "catering.md": "2025214b9fdf7ecb409410913c7fa2ad988dfd05a329763c844f63631adf39f3",
+        "program.md": "bc67f8b11b7473ced2344b162f68e9a3e746c079eea87e6539fa8dcc58634f6c",
+        "decor-av.md": "e7cd9e29cc76489697021951300180809490c96c484715295c5256961c003a80",
+        "logistics.md": "5358628b6b5f96f4913bd1b00b522002038c15c2ef4b6d6635bd06723afcd726",
+        "budget.md": "51954fed9406eaabcf04e38910666ad949be79a778c94f675072705fcb15fe6e"
+      },
+      "updated": "2026-10-13T12:17:22\u002B04:00"
+    },
+    "event-plan-builder": {
+      "status": "completed",
+      "artifact": "event-plan.md",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    },
+    "html-builder": {
+      "status": "stale",
+      "artifact": "event-guide.html",
+      "sha256": null,
+      "input_hashes": {},
+      "updated": null
+    }
+  },
+  "artifacts": {
+    "requirements.md": {
+      "owner": "requirements-formalizer",
+      "status": "completed",
+      "sha256": "4b1c4bcf9d2620aedda392d465643f0f2dcfe89932886f50ba347959138cb99c",
+      "timestamp": "2026-10-12T23:38:39\u002B04:00"
+    },
+    "catering.md": {
+      "owner": "catering-planner",
+      "status": "completed",
+      "sha256": "2025214b9fdf7ecb409410913c7fa2ad988dfd05a329763c844f63631adf39f3",
+      "timestamp": "2026-10-13T11:33:31\u002B04:00"
+    },
+    "program.md": {
+      "owner": "program-planner",
+      "status": "completed",
+      "sha256": "bc67f8b11b7473ced2344b162f68e9a3e746c079eea87e6539fa8dcc58634f6c",
+      "timestamp": "2026-10-13T11:33:45\u002B04:00"
+    },
+    "decor-av.md": {
+      "owner": "decor-av-planner",
+      "status": "completed",
+      "sha256": "e7cd9e29cc76489697021951300180809490c96c484715295c5256961c003a80",
+      "timestamp": "2026-10-13T11:33:23\u002B04:00"
+    },
+    "logistics.md": {
+      "owner": "logistics-planner",
+      "status": "completed",
+      "sha256": "5358628b6b5f96f4913bd1b00b522002038c15c2ef4b6d6635bd06723afcd726",
+      "timestamp": "2026-10-13T11:35:08\u002B04:00"
+    },
+    "budget.md": {
+      "owner": "budget-aggregator",
+      "status": "completed",
+      "sha256": "51954fed9406eaabcf04e38910666ad949be79a778c94f675072705fcb15fe6e",
+      "timestamp": "2026-10-13T11:39:03\u002B04:00"
+    },
+    "validation-report.md": {
+      "owner": "validator",
+      "status": "completed",
+      "sha256": "a2925a165656b5d250031e0f54b5dd7c104683aad7795852346c220be3dfe02d",
+      "timestamp": "2026-10-13T12:17:22\u002B04:00"
+    }
+  },
+  "dependencies": {
+    "requirements-formalizer": [],
+    "venue-planner": [
+      "requirements-formalizer"
+    ],
+    "weather-outlook": [
+      "requirements-formalizer"
+    ],
+    "catering-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "program-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "decor-av-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook"
+    ],
+    "logistics-planner": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner"
+    ],
+    "budget-aggregator": [
+      "requirements-formalizer",
+      "venue-planner",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner"
+    ],
+    "validator": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner",
+      "budget-aggregator"
+    ],
+    "event-plan-builder": [
+      "requirements-formalizer",
+      "venue-planner",
+      "weather-outlook",
+      "catering-planner",
+      "program-planner",
+      "decor-av-planner",
+      "logistics-planner",
+      "budget-aggregator",
+      "validator"
+    ],
+    "html-builder": [
+      "event-plan-builder"
+    ]
+  },
+  "gate_retries": {
+    "G1": 0,
+    "G2": 0,
+    "G3": 0,
+    "G4": 0,
+    "G5": 0,
+    "G6": 1,
+    "G7": 0,
+    "G8": 0,
+    "G9": 0
+  },
+  "approval": {
+    "status": "approved",
+    "plan_sha256": "37d1b4a094ca299dbc6966accf619734f66e1b66be2f537f4f1080874b96f817",
+    "timestamp": "2026-10-13T20:23:58\u002B04:00"
+  },
+  "decisions": [
+    {
+      "agent": "venue-planner",
+      "group": "A",
+      "mode": "full",
+      "reason": "No fixed venue supplied; research 2-3 garden venues and recommend one"
+    },
+    {
+      "agent": "weather-outlook",
+      "group": "A",
+      "mode": "full",
+      "reason": "Ceremony and dinner are outdoors; user asked for heat and rain likelihood and backup"
+    },
+    {
+      "agent": "catering-planner",
+      "group": "B",
+      "mode": "full",
+      "reason": "Dinner for 60 with vegetarian and gluten-free needs; drinks included"
+    },
+    {
+      "agent": "program-planner",
+      "group": "B",
+      "mode": "full",
+      "reason": "Timed run-of-show 17:30 to midnight with band or DJ and photographer"
+    },
+    {
+      "agent": "decor-av-planner",
+      "group": "B",
+      "mode": "full",
+      "reason": "User wants basic decor, lighting and sound; not skipped"
+    },
+    {
+      "agent": "logistics-planner",
+      "group": "C1",
+      "mode": "full",
+      "reason": "Step-free access, guest transport, setup and teardown, risks, weather contingency"
+    },
+    {
+      "agent": "budget-aggregator",
+      "group": "C2",
+      "mode": "full",
+      "reason": "Must include logistics costs; checks 20,000 EUR limit with 10% contingency"
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G3,G6,G8",
+      "reason": "Validator FAIL: G3 venue-planner (step-free route/seating unevidenced); G6 and G8 decor-av-planner (duplicate DJ/photographer; Stereo Rent source does not load). Retry counters G3=1, G6=1, G8=3. Venue re-run first, then downstream catering, program, decor-av, logistics, budget."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G8,G3",
+      "reason": "Run stopped: G8 retry limit (3) exhausted on program.md and decor-av.md structural citation checks; G3 venue accessibility still unconfirmed after one venue retry (needs written venue confirmation or user venue choice). event-plan-builder not run."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User decision 2026-10-13: switch venue to Hostal Rural Mas Blanc (accepted that its accessibility evidence is no better than La Barcelonesa); reset G8 counter. New cycle, all gate_retries set to 0. G3 expected to fail unless Mas Blanc confirms step-free access in writing."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1,G3,G5,G8",
+      "reason": "Validator FAIL 2026-10-13: G1 21,170.60 EUR over 20,000 (scope decision for user; drinks kept per requirements); G3 step-free access unconfirmed (user decision or venue confirmation); G5 catering welcome window vs program (catering retry); G8 Expedia/logistics citations (venue and logistics retry). G5=1, G8=3."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User decision 2026-10-13: raise budget to 21,500 EUR (coordinator-set figure) and relax accessibility requirement (step-free route and accessible seating no longer hard). New cycle; gate_retries reset; requirements re-confirmation required."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User confirmed revised requirements 2026-10-13 (budget 21,500; accessibility relaxed). Full downstream re-run in dependency order."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1,G8",
+      "reason": "Validator FAIL 2026-10-13: G1 (unsourced 1,000 EUR tent allowance; staffing risk to 24,458.84 at 65 EUR/h); G8 logistics (Fixando 403, DIBA PDF unreadable). Retries G1=1, G8=2. Venue to source tent price; logistics to fix citations; budget re-run after."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1,G8",
+      "reason": "Resume 2026-10-13: targeted retry. G1 retry 2 (venue-planner tent price; logistics-planner staffing rate; budget-aggregator re-run). G8 retry 3 (logistics-planner citations). Downstream of venue (catering, program, decor-av, logistics, budget, validator) marked stale and re-run in dependency order."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G8",
+      "reason": "Stop 2026-10-13: G8 retry limit (3) already used. decor-av.md line 67 (Premiumtents named without URL) fails the structural citation check after the venue retry. Logistics, budget, validator and event-plan-builder not run."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User decision 2026-10-13: start a new revision cycle. Gate retry counters reset to 0. Re-run decor-av-planner (G8 uncited Premiumtents line), then logistics-planner (G8 citations, staffing), then budget-aggregator (G1), then validator."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1,G6",
+      "reason": "Validator FAIL in revision cycle 2: G6 Premiumtents listed as recommendation in program.md and decor-av.md (retry 1: program-planner, decor-av-planner; then logistics, budget, validator). G1 grand total 22,119.90 vs 21,500 (retry 1: budget re-run after G6 fixes; catering drinks not re-run without new evidence; overrun is a user decision if it persists)."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1,G6",
+      "reason": "Validator FAIL again in revision cycle 2 (G1 22,119.90 vs 21,500; G6 Premiumtents price and link still in program.md and decor-av.md). Retry 2: program-planner and decor-av-planner (G6); catering-planner (G1 drinks add-on, only with sourced evidence); then logistics, budget, validator."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G6",
+      "reason": "Retry 3 (last allowed) for G6: program-planner and decor-av-planner remove every remaining Premiumtents name, price and link in their artifacts (program weather table ceremony row; decor-av Rentals and Sources). If G6 still fails after this, stop."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G8",
+      "reason": "Retry 1 for G8 in revision cycle 2: catering.md lines 25 and 29 name caterers as recommendations or comparisons without an http(s) URL after the drinks search. catering-planner to add the fetched URLs or reword them as non-recommendations."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G6,G1",
+      "reason": "Stop 2026-10-13 (revision cycle 2): G6 retry limit (3) exhausted. catering.md names Premiumtents and restates its price in three places (Recommended Pick, Dietary Recap, Sources). G1 still fails: grand total 22,119.90 vs 21,500 (drinks add-on 1,815 incl. VAT, unverified; needs a written venue answer or a user scope decision). event-plan-builder not run."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User decision 2026-10-13: start new revision cycle (cycle 3), keep drinks in scope. Gate counters reset. catering-planner reworded to remove Premiumtents name and price; then logistics, budget, validator. G1 expected to remain over limit (22,119.90 vs 21,500) until the user changes budget or scope."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G6",
+      "reason": "Cycle 3 retry 1 for G6: budget.md names Premiumtents and quotes its price. budget-aggregator to remove the name, bodas.net reference and price text. G1 not re-run: catering found no sourced drinks price in cycle 2 and the user chose to keep drinks; total stays 22,119.90 vs 21,500 as a user decision."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G1",
+      "reason": "Cycle 3 validation: only G1 fails. Grand total 22,119.90 EUR vs 21,500 EUR (619.90 over), driven by unverified drinks add-on 1,815 EUR incl. VAT. G2-G9 pass. Needs a user budget or scope decision; event-plan-builder not run."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User decision 2026-10-13: raise budget to 22,200 EUR (incl. contingency), keep drinks. input.md updated; requirements-formalizer re-run; requirements must be confirmed again before downstream re-run."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "User confirmed revised requirements 2026-10-13 (budget 22,200 EUR incl. contingency, drinks in scope). Gate counters reset. Full downstream re-run in dependency order: group A (venue, weather), B (catering, program, decor-av), C1 (logistics), C2 (budget), validator."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "G6",
+      "reason": "Cycle 4 retry 1 for G6: budget.md Venue row names the tent supplier. Wording-only fix by budget-aggregator; amount and total unchanged."
+    },
+    {
+      "agent": "coordinator",
+      "gate": "all",
+      "reason": "Validation PASS 2026-10-13 (cycle 4): G1 22,119.90 vs 22,200; G2-G9 PASS. Launching event-plan-builder."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "event-plan.md built and passes template check (13 headings). Awaiting human approval via scripts\u0007pprove.cmd."
+    }
+  ]
+}
