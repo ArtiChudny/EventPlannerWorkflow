@@ -1,7 +1,7 @@
 {
   "run_id": "20261013-2034-kids-birthday-hamburg",
-  "created": "2026-10-13T20:34:55+04:00",
-  "updated": "2026-10-13T23:55:48+04:00",
+  "created": "2026-10-13T20:34:55\u002B04:00",
+  "updated": "2026-10-14T00:08:22\u002B04:00",
   "status": "html_built",
   "current_stage": "done",
   "revision_count": 1,
@@ -10,23 +10,29 @@
     "requirements-formalizer": {
       "status": "completed",
       "artifact": "artifacts/requirements.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+      "input_hashes": {
+        "input.md": "a79e35ab9d35fa10d02f204cf3ec18dd412ea555ff397802aac28cd430f3b29a"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "venue-planner": {
       "status": "completed",
       "artifact": "artifacts/venue.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "weather-outlook": {
-      "status": "running",
+      "status": "completed",
       "artifact": "artifacts/weather.md",
-      "sha256": "96d3935562e3b4ca25f84b6c6cf2b592a283fe8c7eabba535e93afa0dd79aafe",
-      "input_hashes": {},
-      "updated": "2026-10-13T20:42:20+04:00"
+      "sha256": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "catering-planner": {
       "status": "completed",
@@ -35,78 +41,167 @@
       "input_hashes": {
         "weather.md": "96d3935562e3b4ca25f84b6c6cf2b592a283fe8c7eabba535e93afa0dd79aafe"
       },
-      "updated": "2026-10-13T23:29:37+04:00"
+      "updated": "2026-10-13T23:29:37\u002B04:00"
     },
     "program-planner": {
       "status": "completed",
       "artifact": "artifacts/program.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "weather.md": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "decor-av-planner": {
       "status": "completed",
       "artifact": "artifacts/decor-av.md",
-      "sha256": "4364b1eb512297e0a3d9c7236f46228b2c44064aa377e473ed310170e651821f",
+      "sha256": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8",
       "input_hashes": {
-        "weather.md": "96d3935562e3b4ca25f84b6c6cf2b592a283fe8c7eabba535e93afa0dd79aafe"
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "weather.md": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e"
       },
-      "updated": "2026-10-13T23:29:23+04:00"
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "logistics-planner": {
       "status": "completed",
       "artifact": "artifacts/logistics.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "e20e44bd58b9e264f5f60d2195b0fd9abb6f850bf4b6933f4c658bbebee27f09",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "weather.md": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e",
+        "catering.md": "4ca56548d9243751a34ddcd93d55e1b84d9a0ecdc2c1c3d4e5dba2cf1b950314",
+        "program.md": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+        "decor-av.md": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "budget-aggregator": {
       "status": "completed",
       "artifact": "artifacts/budget.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "0c12997c4ad7186c343cd258cf306a4942e5417cc2025e3c520f2859e6525aa4",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "catering.md": "4ca56548d9243751a34ddcd93d55e1b84d9a0ecdc2c1c3d4e5dba2cf1b950314",
+        "program.md": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+        "decor-av.md": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8",
+        "logistics.md": "e20e44bd58b9e264f5f60d2195b0fd9abb6f850bf4b6933f4c658bbebee27f09"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "validator": {
       "status": "completed",
       "artifact": "artifacts/validation-report.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "a086e608083ce78282b7c30a70c98efb1aba25b44cf47051e6f618d6b872409f",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "weather.md": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e",
+        "catering.md": "4ca56548d9243751a34ddcd93d55e1b84d9a0ecdc2c1c3d4e5dba2cf1b950314",
+        "program.md": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+        "decor-av.md": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8",
+        "logistics.md": "e20e44bd58b9e264f5f60d2195b0fd9abb6f850bf4b6933f4c658bbebee27f09",
+        "budget.md": "0c12997c4ad7186c343cd258cf306a4942e5417cc2025e3c520f2859e6525aa4"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "event-plan-builder": {
       "status": "completed",
       "artifact": "event-plan.md",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "f7f5a45b861633cc8eb6bb600fb71eb658c7996f15c29b06f17a854ecf893b32",
+      "input_hashes": {
+        "requirements.md": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+        "venue.md": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+        "weather.md": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e",
+        "catering.md": "4ca56548d9243751a34ddcd93d55e1b84d9a0ecdc2c1c3d4e5dba2cf1b950314",
+        "program.md": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+        "decor-av.md": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8",
+        "logistics.md": "e20e44bd58b9e264f5f60d2195b0fd9abb6f850bf4b6933f4c658bbebee27f09",
+        "budget.md": "0c12997c4ad7186c343cd258cf306a4942e5417cc2025e3c520f2859e6525aa4",
+        "validation-report.md": "a086e608083ce78282b7c30a70c98efb1aba25b44cf47051e6f618d6b872409f"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     },
     "html-builder": {
       "status": "completed",
       "artifact": "event-guide.html",
-      "sha256": null,
-      "input_hashes": {},
-      "updated": null
+      "sha256": "5d9c9e7b1249250a781499cec73c7936384d997dfd6e2a3793e3740db7a2bfea",
+      "input_hashes": {
+        "event-plan.md": "f7f5a45b861633cc8eb6bb600fb71eb658c7996f15c29b06f17a854ecf893b32"
+      },
+      "updated": "2026-10-14T00:08:22\u002B04:00"
     }
   },
   "artifacts": {
     "weather.md": {
       "owner": "weather-outlook",
       "status": "completed",
-      "sha256": "96d3935562e3b4ca25f84b6c6cf2b592a283fe8c7eabba535e93afa0dd79aafe",
-      "timestamp": "2026-10-13T20:42:20+04:00"
+      "sha256": "e4aacc9ac3bf80928a489833f4a59250892f949741255b7d6500d7ab2625c84e",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
     },
     "decor-av.md": {
       "owner": "decor-av-planner",
       "status": "completed",
-      "sha256": "4364b1eb512297e0a3d9c7236f46228b2c44064aa377e473ed310170e651821f",
-      "timestamp": "2026-10-13T23:29:23+04:00"
+      "sha256": "7393f3383265ab0f10b571b79609108a8d3b307748accca3f0210e7190525fd8",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
     },
     "catering.md": {
       "owner": "catering-planner",
       "status": "completed",
       "sha256": "4ca56548d9243751a34ddcd93d55e1b84d9a0ecdc2c1c3d4e5dba2cf1b950314",
-      "timestamp": "2026-10-13T23:29:37+04:00"
+      "timestamp": "2026-10-13T23:29:37\u002B04:00"
+    },
+    "requirements.md": {
+      "owner": "requirements-formalizer",
+      "status": "completed",
+      "sha256": "5fb38242fa92bf704445d1082141ef79a36938bb8aecadf672c68b18c208ead8",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "venue.md": {
+      "owner": "venue-planner",
+      "status": "completed",
+      "sha256": "bb25218b968a592b26e112ffc8753d5df3bdfe0ac9484684e835ab1b4101f224",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "program.md": {
+      "owner": "program-planner",
+      "status": "completed",
+      "sha256": "1db3a36c20c0fbf1e7f7e79f3535577ce05e95f96ba05d0b63dd0388622b4f72",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "logistics.md": {
+      "owner": "logistics-planner",
+      "status": "completed",
+      "sha256": "e20e44bd58b9e264f5f60d2195b0fd9abb6f850bf4b6933f4c658bbebee27f09",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "budget.md": {
+      "owner": "budget-aggregator",
+      "status": "completed",
+      "sha256": "0c12997c4ad7186c343cd258cf306a4942e5417cc2025e3c520f2859e6525aa4",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "validation-report.md": {
+      "owner": "validator",
+      "status": "completed",
+      "sha256": "a086e608083ce78282b7c30a70c98efb1aba25b44cf47051e6f618d6b872409f",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "event-plan.md": {
+      "owner": "event-plan-builder",
+      "status": "completed",
+      "sha256": "f7f5a45b861633cc8eb6bb600fb71eb658c7996f15c29b06f17a854ecf893b32",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
+    },
+    "event-guide.html": {
+      "owner": "html-builder",
+      "status": "completed",
+      "sha256": "5d9c9e7b1249250a781499cec73c7936384d997dfd6e2a3793e3740db7a2bfea",
+      "timestamp": "2026-10-14T00:08:22\u002B04:00"
     }
   },
   "dependencies": {
@@ -187,7 +282,7 @@
   "approval": {
     "status": "approved",
     "plan_sha256": "f7f5a45b861633cc8eb6bb600fb71eb658c7996f15c29b06f17a854ecf893b32",
-    "timestamp": "2026-10-13T23:53:51+04:00"
+    "timestamp": "2026-10-13T23:53:51\u002B04:00"
   },
   "decisions": [
     {
