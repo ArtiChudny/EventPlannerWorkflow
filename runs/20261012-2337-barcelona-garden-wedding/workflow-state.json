@@ -2,8 +2,8 @@
   "run_id": "20261012-2337-barcelona-garden-wedding",
   "created": "2026-10-12T23:37:56\u002B04:00",
   "updated": "2026-10-13T20:23:58\u002B04:00",
-  "status": "approved",
-  "current_stage": "html",
+  "status": "html_built",
+  "current_stage": "done",
   "revision_count": 2,
   "requirements_confirmed": true,
   "agents": {
@@ -17,18 +17,18 @@
       "updated": "2026-10-12T23:38:39\u002B04:00"
     },
     "venue-planner": {
-      "status": "running",
+      "status": "completed",
       "artifact": "artifacts/venue.md",
-      "sha256": null,
+      "sha256": "c1b670d15bdad003e22e6d8871dfa43b07e4c3973f04a172e9528bc90317a53b",
       "input_hashes": {},
-      "updated": null
+      "updated": "2026-10-13T11:32:41+04:00"
     },
     "weather-outlook": {
-      "status": "running",
+      "status": "completed",
       "artifact": "artifacts/weather.md",
-      "sha256": null,
+      "sha256": "ed3656a4e339f1bb35fe9a17647984077024a52686ecbdfbc0eb70b07ba3fa58",
       "input_hashes": {},
-      "updated": null
+      "updated": "2026-10-13T11:32:18+04:00"
     },
     "catering-planner": {
       "status": "completed",
@@ -70,7 +70,7 @@
       "updated": "2026-10-13T11:35:08\u002B04:00"
     },
     "budget-aggregator": {
-      "status": "running",
+      "status": "completed",
       "artifact": "artifacts/budget.md",
       "sha256": "51954fed9406eaabcf04e38910666ad949be79a778c94f675072705fcb15fe6e",
       "input_hashes": {
@@ -99,19 +99,43 @@
     "event-plan-builder": {
       "status": "completed",
       "artifact": "event-plan.md",
-      "sha256": null,
+      "sha256": "37d1b4a094ca299dbc6966accf619734f66e1b66be2f537f4f1080874b96f817",
       "input_hashes": {},
-      "updated": null
+      "updated": "2026-10-13T12:19:40+04:00"
     },
     "html-builder": {
-      "status": "stale",
+      "status": "completed",
       "artifact": "event-guide.html",
-      "sha256": null,
+      "sha256": "8f491ceb35d962d2a60027e7c6faa29f6ba1282de71115f95502136b30b6952b",
       "input_hashes": {},
-      "updated": null
+      "updated": "2026-10-13T20:27:18+04:00"
     }
   },
   "artifacts": {
+    "venue.md": {
+      "owner": "venue-planner",
+      "status": "completed",
+      "sha256": "c1b670d15bdad003e22e6d8871dfa43b07e4c3973f04a172e9528bc90317a53b",
+      "timestamp": "2026-10-13T11:32:41+04:00"
+    },
+    "weather.md": {
+      "owner": "weather-outlook",
+      "status": "completed",
+      "sha256": "ed3656a4e339f1bb35fe9a17647984077024a52686ecbdfbc0eb70b07ba3fa58",
+      "timestamp": "2026-10-13T11:32:18+04:00"
+    },
+    "event-plan.md": {
+      "owner": "event-plan-builder",
+      "status": "completed",
+      "sha256": "37d1b4a094ca299dbc6966accf619734f66e1b66be2f537f4f1080874b96f817",
+      "timestamp": "2026-10-13T12:19:40+04:00"
+    },
+    "event-guide.html": {
+      "owner": "html-builder",
+      "status": "completed",
+      "sha256": "8f491ceb35d962d2a60027e7c6faa29f6ba1282de71115f95502136b30b6952b",
+      "timestamp": "2026-10-13T20:27:18+04:00"
+    },
     "requirements.md": {
       "owner": "requirements-formalizer",
       "status": "completed",
@@ -383,7 +407,11 @@
     },
     {
       "agent": "coordinator",
-      "reason": "event-plan.md built and passes template check (13 headings). Awaiting human approval via scripts\u0007pprove.cmd."
+      "reason": "event-plan.md built and passes template check (13 headings). Awaiting human approval via scripts\\approve.cmd."
+    },
+    {
+      "agent": "coordinator",
+      "reason": "2026-10-14 state repair: approval matched the plan (37d1b4a0...). event-guide.html was written 4 minutes after approval but never recorded. Set html-builder and artifact hashes from disk, cleared stale running entries for venue and weather, and fixed a corrupted approve.cmd path in this log."
     }
   ]
 }
